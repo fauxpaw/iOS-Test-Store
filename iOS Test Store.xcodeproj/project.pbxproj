@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		AC8D751020D47C7100F5C25D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8D750F20D47C7100F5C25D /* AppDelegate.swift */; };
-		AC8D751220D47C7100F5C25D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8D751120D47C7100F5C25D /* ViewController.swift */; };
 		AC8D751520D47C7100F5C25D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC8D751320D47C7100F5C25D /* Main.storyboard */; };
 		AC8D751720D47C7200F5C25D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC8D751620D47C7200F5C25D /* Assets.xcassets */; };
 		AC8D751A20D47C7200F5C25D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC8D751820D47C7200F5C25D /* LaunchScreen.storyboard */; };
 		AC8D752520D47C7200F5C25D /* iOS_Test_StoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8D752420D47C7200F5C25D /* iOS_Test_StoreTests.swift */; };
 		AC8D753020D47C7200F5C25D /* iOS_Test_StoreUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8D752F20D47C7200F5C25D /* iOS_Test_StoreUITests.swift */; };
+		AC8D753E20D47CFD00F5C25D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8D753D20D47CFD00F5C25D /* LoginViewController.swift */; };
+		AC8D754420D47FF200F5C25D /* StoreListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8D754320D47FF200F5C25D /* StoreListViewController.swift */; };
+		AC8D754620D4826F00F5C25D /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8D754520D4826F00F5C25D /* Product.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +38,6 @@
 /* Begin PBXFileReference section */
 		AC8D750C20D47C7100F5C25D /* iOS Test Store.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS Test Store.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC8D750F20D47C7100F5C25D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AC8D751120D47C7100F5C25D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AC8D751420D47C7100F5C25D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AC8D751620D47C7200F5C25D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC8D751920D47C7200F5C25D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +48,9 @@
 		AC8D752B20D47C7200F5C25D /* iOS Test StoreUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOS Test StoreUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC8D752F20D47C7200F5C25D /* iOS_Test_StoreUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_Test_StoreUITests.swift; sourceTree = "<group>"; };
 		AC8D753120D47C7200F5C25D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC8D753D20D47CFD00F5C25D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		AC8D754320D47FF200F5C25D /* StoreListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreListViewController.swift; sourceTree = "<group>"; };
+		AC8D754520D4826F00F5C25D /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +101,11 @@
 		AC8D750E20D47C7100F5C25D /* iOS Test Store */ = {
 			isa = PBXGroup;
 			children = (
+				AC8D753F20D47D0600F5C25D /* Controller */,
+				AC8D754220D47D3B00F5C25D /* Global */,
+				AC8D754020D47D0C00F5C25D /* Model */,
+				AC8D754120D47D1300F5C25D /* View */,
 				AC8D750F20D47C7100F5C25D /* AppDelegate.swift */,
-				AC8D751120D47C7100F5C25D /* ViewController.swift */,
 				AC8D751320D47C7100F5C25D /* Main.storyboard */,
 				AC8D751620D47C7200F5C25D /* Assets.xcassets */,
 				AC8D751820D47C7200F5C25D /* LaunchScreen.storyboard */,
@@ -123,6 +130,37 @@
 				AC8D753120D47C7200F5C25D /* Info.plist */,
 			);
 			path = "iOS Test StoreUITests";
+			sourceTree = "<group>";
+		};
+		AC8D753F20D47D0600F5C25D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				AC8D753D20D47CFD00F5C25D /* LoginViewController.swift */,
+				AC8D754320D47FF200F5C25D /* StoreListViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		AC8D754020D47D0C00F5C25D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AC8D754520D4826F00F5C25D /* Product.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AC8D754120D47D1300F5C25D /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AC8D754220D47D3B00F5C25D /* Global */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Global;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,7 +294,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC8D751220D47C7100F5C25D /* ViewController.swift in Sources */,
+				AC8D753E20D47CFD00F5C25D /* LoginViewController.swift in Sources */,
+				AC8D754620D4826F00F5C25D /* Product.swift in Sources */,
+				AC8D754420D47FF200F5C25D /* StoreListViewController.swift in Sources */,
 				AC8D751020D47C7100F5C25D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
