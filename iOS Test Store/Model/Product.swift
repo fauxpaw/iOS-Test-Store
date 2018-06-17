@@ -8,7 +8,7 @@
 
 import UIKit
 
-struct Product {
+class Product {
     
     let name : String
     let id: String
@@ -16,19 +16,42 @@ struct Product {
     let brand = "Analytics Pros"
     let category = "Fruit"
     let variant = "None"
+    let currency = "USD"
     let price : Double
-    var quantity: Int = 0
+    var quantity: Int?
+    let fruitType: FruitType
     
     
-    init(name: String, id: String, image: UIImage, price: Double, quantity: Int) {
+    init(name: String, id: String, image: UIImage, price: Double, type: FruitType, quantity: Int? = nil) {
         self.name = name
         self.id = id
         self.image = image
         self.price = price
-        self.quantity = quantity
-        
+        self.fruitType = type
+        if let q = quantity {
+            self.quantity = q
+        }
     }
-    
-    
-    
+}
+
+extension Product {
+    convenience init(type: FruitType, quantity: Int? = nil) {
+        switch type {
+        case .Apple:
+            self.init(name: nmApple, id: appleID, image: appleImage, price: applePrice, type: type)
+            if let q = quantity {
+                self.quantity = q
+            }
+        case .Banana:
+            self.init(name: nmBanana, id: bananaID, image: bananaImage, price: bananaPrice, type: type)
+            if let q = quantity {
+                self.quantity = q
+            }
+        case .Orange:
+            self.init(name: nmOrange, id: orangeID, image: orangeImage, price: orangePrice, type: type)
+            if let q = quantity {
+                self.quantity = q
+            }
+        }
+    }
 }

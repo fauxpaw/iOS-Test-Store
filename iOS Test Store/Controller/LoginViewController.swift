@@ -10,14 +10,13 @@ import UIKit
 
 class LoginViewController: UIViewController {
 
-    
     @IBOutlet weak var userNameTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var loginSuccessButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -27,8 +26,8 @@ class LoginViewController: UIViewController {
     
     @IBAction func didSelectLoginSuccess(_ sender: Any) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let destinationVC = storyboard.instantiateViewController(withIdentifier: "StoreListViewController")
-        self.present(destinationVC, animated: true)
+        let storeListVC = storyboard.instantiateViewController(withIdentifier: "StoreListViewController")
+        self.navigationController?.pushViewController(storeListVC, animated: true)
     }
     
     @IBAction func didSelectLoginFail(_ sender: Any) {

@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C7A149D20D60E760061FF3D /* ProductDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C7A149C20D60E760061FF3D /* ProductDetailViewController.swift */; };
+		4C7A149F20D617EE0061FF3D /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C7A149E20D617EE0061FF3D /* Global.swift */; };
+		4C7A14A120D6198E0061FF3D /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C7A14A020D6198E0061FF3D /* CartViewController.swift */; };
+		4C7A14A520D61D780061FF3D /* Cart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C7A14A420D61D780061FF3D /* Cart.swift */; };
+		4C7A14A720D6204C0061FF3D /* FruitType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C7A14A620D6204C0061FF3D /* FruitType.swift */; };
+		4C7A14A920D639D50061FF3D /* CheckoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C7A14A820D639D50061FF3D /* CheckoutViewController.swift */; };
+		4C7A14AB20D63E270061FF3D /* PurchaseConfirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C7A14AA20D63E270061FF3D /* PurchaseConfirmationViewController.swift */; };
 		AC8D751020D47C7100F5C25D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8D750F20D47C7100F5C25D /* AppDelegate.swift */; };
 		AC8D751520D47C7100F5C25D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC8D751320D47C7100F5C25D /* Main.storyboard */; };
 		AC8D751720D47C7200F5C25D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC8D751620D47C7200F5C25D /* Assets.xcassets */; };
@@ -36,6 +43,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4C7A149C20D60E760061FF3D /* ProductDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailViewController.swift; sourceTree = "<group>"; };
+		4C7A149E20D617EE0061FF3D /* Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Global.swift; path = "iOS Test Store/Controller/Global.swift"; sourceTree = SOURCE_ROOT; };
+		4C7A14A020D6198E0061FF3D /* CartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
+		4C7A14A420D61D780061FF3D /* Cart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cart.swift; sourceTree = "<group>"; };
+		4C7A14A620D6204C0061FF3D /* FruitType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitType.swift; sourceTree = "<group>"; };
+		4C7A14A820D639D50061FF3D /* CheckoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutViewController.swift; sourceTree = "<group>"; };
+		4C7A14AA20D63E270061FF3D /* PurchaseConfirmationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseConfirmationViewController.swift; sourceTree = "<group>"; };
 		AC8D750C20D47C7100F5C25D /* iOS Test Store.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS Test Store.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC8D750F20D47C7100F5C25D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AC8D751420D47C7100F5C25D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -101,15 +115,11 @@
 		AC8D750E20D47C7100F5C25D /* iOS Test Store */ = {
 			isa = PBXGroup;
 			children = (
+				AC8D751B20D47C7200F5C25D /* Info.plist */,
 				AC8D753F20D47D0600F5C25D /* Controller */,
 				AC8D754220D47D3B00F5C25D /* Global */,
 				AC8D754020D47D0C00F5C25D /* Model */,
 				AC8D754120D47D1300F5C25D /* View */,
-				AC8D750F20D47C7100F5C25D /* AppDelegate.swift */,
-				AC8D751320D47C7100F5C25D /* Main.storyboard */,
-				AC8D751620D47C7200F5C25D /* Assets.xcassets */,
-				AC8D751820D47C7200F5C25D /* LaunchScreen.storyboard */,
-				AC8D751B20D47C7200F5C25D /* Info.plist */,
 			);
 			path = "iOS Test Store";
 			sourceTree = "<group>";
@@ -137,6 +147,10 @@
 			children = (
 				AC8D753D20D47CFD00F5C25D /* LoginViewController.swift */,
 				AC8D754320D47FF200F5C25D /* StoreListViewController.swift */,
+				4C7A149C20D60E760061FF3D /* ProductDetailViewController.swift */,
+				4C7A14A020D6198E0061FF3D /* CartViewController.swift */,
+				4C7A14A820D639D50061FF3D /* CheckoutViewController.swift */,
+				4C7A14AA20D63E270061FF3D /* PurchaseConfirmationViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -145,6 +159,8 @@
 			isa = PBXGroup;
 			children = (
 				AC8D754520D4826F00F5C25D /* Product.swift */,
+				4C7A14A420D61D780061FF3D /* Cart.swift */,
+				4C7A14A620D6204C0061FF3D /* FruitType.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -159,6 +175,11 @@
 		AC8D754220D47D3B00F5C25D /* Global */ = {
 			isa = PBXGroup;
 			children = (
+				4C7A149E20D617EE0061FF3D /* Global.swift */,
+				AC8D751620D47C7200F5C25D /* Assets.xcassets */,
+				AC8D750F20D47C7100F5C25D /* AppDelegate.swift */,
+				AC8D751320D47C7100F5C25D /* Main.storyboard */,
+				AC8D751820D47C7200F5C25D /* LaunchScreen.storyboard */,
 			);
 			path = Global;
 			sourceTree = "<group>";
@@ -296,8 +317,15 @@
 			files = (
 				AC8D753E20D47CFD00F5C25D /* LoginViewController.swift in Sources */,
 				AC8D754620D4826F00F5C25D /* Product.swift in Sources */,
+				4C7A14A120D6198E0061FF3D /* CartViewController.swift in Sources */,
+				4C7A149F20D617EE0061FF3D /* Global.swift in Sources */,
+				4C7A14A720D6204C0061FF3D /* FruitType.swift in Sources */,
+				4C7A149D20D60E760061FF3D /* ProductDetailViewController.swift in Sources */,
 				AC8D754420D47FF200F5C25D /* StoreListViewController.swift in Sources */,
 				AC8D751020D47C7100F5C25D /* AppDelegate.swift in Sources */,
+				4C7A14A920D639D50061FF3D /* CheckoutViewController.swift in Sources */,
+				4C7A14AB20D63E270061FF3D /* PurchaseConfirmationViewController.swift in Sources */,
+				4C7A14A520D61D780061FF3D /* Cart.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
